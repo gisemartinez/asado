@@ -1,0 +1,32 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hagamo' un Asado</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        
+    </body>
+</html>
+<script type='text/javascript' src='../steal/steal.js'></script>
+<script type='text/javascript'>
+    steal(
+        'can/control/control.js',
+        'jquery/jquery.js'
+    ).then(
+        'jquery-mobile/jquery.mobile.structure-1.1.0.css',
+        'jquery-mobile/jquery.mobile.theme-1.1.0.css',
+        'jquery-mobile/jquery.mobile-1.1.0.css',
+        'jquery-mobile/jquery.mobile-1.1.0.js'
+      ).then('calcAsado/controles/index.js',
+    
+             function($){
+              // mobile_router = new Mobile_Route('html')
+               new Opciones('body',{})
+              }
+         ) 
+</script>

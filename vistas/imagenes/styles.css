@@ -1,0 +1,31 @@
+/* 
+    Document   : styles
+    Created on : 12/06/2012, 00:51:49
+    Author     : Gisela Martinez <your.name at your.org>
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+div#main{
+        
+	background-image:url(../imagenes/background_tree.jpg);
+	background-repeat:repeat;
+         
+        
+}        
+.roundabout-holder {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: 5em;
+      width: 25em;
+   }
+   .roundabout-moveable-item {
+      height: 4em;
+      width: 4em;
+      cursor: pointer;
+      
+   }
+   .roundabout-in-focus {
+      cursor: auto;
+   }
