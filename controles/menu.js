@@ -14,7 +14,7 @@ steal('asado/vistas/imagenes/styles.css',
         },
         {
          'init':function(element,options){
-            this.element.append(can.view('vistas/menu.ejs', {img :url}))
+            this.element.append(can.view('vistas/menu.ejs'))
             $.mobile.changePage($('#menuPage'),{transition:"flip"})
 
         },

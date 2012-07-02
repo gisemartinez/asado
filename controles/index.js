@@ -3,11 +3,11 @@
  * 
  * author:Gisela Martinez
  */
-steal('calcAsado/vistas/imagenes/styles.css',
+steal('asado/vistas/imagenes/styles.css',
       'can/control/control.js',
       'can/view/ejs',
-      'calcAsado/commons/commons.js',
-      'calcAsado/controles/menu.js'
+      'asado/commons/commons.js',
+      'asado/controles/menu.js'
 ).then(function(){
             can.Control('Opciones',
             {
@@ -19,7 +19,7 @@ steal('calcAsado/vistas/imagenes/styles.css',
                   
                 },
                'div#imagen click':function(){
-                   new Menu_slide('body',{})
+                   new Menu('body',{})
                }
             }
             )

@@ -4,4 +4,4 @@
  */
 
 
-url='/calculoAsados/calcAsado/'
+url='/donejs/asado/'
