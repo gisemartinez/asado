@@ -18,7 +18,7 @@ steal('asado/vistas/imagenes/styles.css',
                   this.element.append(can.view(url+'vistas/index.ejs',{img_url:url}))
                   
                 },
-               'div#imagen click':function(){
+               'a#aceptar click':function(){
                    new Menu('body',{})
                }
             }
