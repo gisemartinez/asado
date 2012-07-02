@@ -6,8 +6,9 @@
 steal('asado/vistas/imagenes/styles.css',
       'can/control/control.js',
       'can/view/ejs',
-      'asado/commons/commons.js'
-).then(function(){
+	'asado/controles/config.js',
+	'asado/controles/historial.js',
+      'asado/commons/commons.js').then(function(){
         can.Control('Menu',
         {
          defaults:{}
@@ -19,10 +20,10 @@ steal('asado/vistas/imagenes/styles.css',
 
         },
 	'li#config click':function(){
-                alert("Configurar app")
+                new Configuracion('body',{})
          },
 	'li#historial click':function(){
-                alert("Mostrar historial")
+                new Historial('body',{})
          },
 	'li#info click':function(){
                 alert("Info del sistema")
