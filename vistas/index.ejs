@@ -1,24 +1,60 @@
-<div id="indexPage" data-role="page">
-	<div data-role="header">
-		<a data-rel="back" data-icon="home" data-iconpos="notext" data-direction="reverse"
-		class="ui-btn-right ui-btn ui-shadow ui-btn-corner-all ui-btn-icon-notext">
-			<span class="ui-btn-inner ui-btn-corner-all">
-				<span class="ui-btn-text">Salir
-				</span>
-				<span class="ui-icon ui-icon-delete ui-icon-shadow">
-					&nbsp;
-				</span>
-			</span>
-		</a>
-		<h1>Elija actividad</h1>	
-	</div><!--FIN DE:ENCABEZADO,TITULO,ICONO PARA CERRAR-->
-	<div id="main" data-role="content">
-            <div id="imagen" >
-                <img src="<%=this.img_url %>vistas/imagenes/parrillon.jpg" alt="Asaditem" hight="100%" width="100%" align="center"/>
+<div id="indexPage" data-role="page" data-theme="e">
+	
+	<div id="main" data-role="content" style="padding: px">
+            <div id="login" >
+           	 <form action="form.php" method="get"> 
+           	     <div data-role="fieldcontain">
+           	         <fieldset data-role="controlgroup">
+           	             <label for="textinput2"></label>
+           	             <input id="textinput2" placeholder="" value="Usuario" type="text" />
+           	         </fieldset>
+           	     </div>
+           	     <div data-role="fieldcontain">
+           	         <fieldset data-role="controlgroup">
+           	             <label for="textinput3"></label>
+           	             <input id="textinput3" placeholder="" value="Password" type="text" />
+           	         </fieldset>
+           	     </div>
+		    
+		</form> <!--FIN DE LOGIN-->
+		 <a id="aceptar" data-role="button" data-mini="true">Aceptar</a>
+                <div data-role="fieldcontain">
+                    <fieldset data-role="controlgroup" data-theme="a" data-type="vertical" data-mini="true">
+                        <legend>
+                        </legend>
+                        <input name="checkbox1" id="checkbox1" type="checkbox" />
+                        <label for="checkbox1">
+                            Permanecer logueado
+                        </label>
+                    </fieldset>
+                </div>
+                
+                    <div data-role="fieldcontain">
+                        <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+                            <legend><span style="color:orange">
+                                WTF¿No tiene usuario?Desea:
+                        </span>    </legend>
+                            <input name="radiobuttons1" id="radio2" value="radio2" type="radio" />
+                            <label for="radio2">
+                                Usar FB
+                            </label>
+                            <input name="radiobuttons1" id="radio3" value="radio3" type="radio" />
+                            <label for="radio3">
+                                Crear uno
+                            </label>
+                        </fieldset>
+                    </div>
+                
+                <div data-role="navbar" data-iconpos="right">
+                    <ul>
+                    </ul>
+                </div>
             </div>
+        
+            
             
 	</div><!--FIN DE CONTENIDO-->
-	<div data-role="footer"></div>
+	
 
 
 </div><!--FIN DE LA PAGINA-->
